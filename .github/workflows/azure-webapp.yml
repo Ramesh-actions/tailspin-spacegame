@@ -45,7 +45,7 @@ jobs:
 
     deploy:
       name: 🚀 Deploy
-      runs-on: ubuntu-latest
+      runs-on: test-runner
       environment: deploy
       needs: build_web_app
 
@@ -55,9 +55,9 @@ jobs:
           with:
             name: spacegameweb
 
-        - name: Azure WebApp
-          uses: Azure/webapps-deploy@v2
-          with:
-            app-name: space-game1
-            package: . 
-            publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+#         - name: Azure WebApp
+#           uses: Azure/webapps-deploy@v2
+#           with:
+#             app-name: space-game1
+#             package: . 
+#             publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
