@@ -42,7 +42,6 @@ jobs:
         with:
           name: spacegameweb
           path: ./Tailspin.SpaceGame.Web/bin/Release/netcoreapp3.1/publish/
-
     deploy:
       name: 🚀 Deploy
       runs-on: test-runner
@@ -56,9 +55,9 @@ jobs:
             name: spacegameweb
             
             path: C:\Users\rameshkumar\projects\spacegameweb
-       - name: Deploy to IIS
-        run: | 
-         xcopy C:\Users\rameshkumar\projects\spacegameweb\ "C:\tailspin" /Y
+        - name: Deploy to IIS
+          run: | 
+           xcopy C:\Users\rameshkumar\projects\spacegameweb\ "C:\tailspin" /Y
 
 #         - name: Azure WebApp
 #           uses: Azure/webapps-deploy@v2
