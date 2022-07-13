@@ -57,7 +57,7 @@ jobs:
             path: C:\Users\rameshkumar\projects\spacegameweb
         - name: Deploy to IIS
           run: | 
-           xcopy C:\Users\rameshkumar\projects\spacegameweb\ "C:\tailspin" /Y
+           xcopy C:\Users\rameshkumar\projects\spacegameweb\ "F:/Websites/C:\tailspin -Recurse -Force" /Y  
 
 #         - name: Azure WebApp
 #           uses: Azure/webapps-deploy@v2
