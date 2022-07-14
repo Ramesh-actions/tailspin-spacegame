@@ -65,8 +65,8 @@ jobs:
           name: Clear IIS path
       
         - run: Copy-Item ./** -Destination ${{env.IIS_SITE_PATH}} -Recurse
-          name: Copy to IIS path
-        - run: |
+        - name: Copy to IIS path
+          run: |
            Import-Module WebAdministration
            Stop-WebSite ${{env.IIS_WEBSITE}}
            Start-WebSite ${{env.IIS_WEBSITE}}
