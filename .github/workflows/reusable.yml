@@ -5,7 +5,7 @@ on:
 
 jobs:
   job1:
-    uses: Playground-demo/sample/.github/workflows/main.yml@main
+    uses: Playground-demo/sample/.github/workflows/reusable-wf.yml@main
 
   job2:
     runs-on: ubuntu-latest
