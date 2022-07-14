@@ -60,11 +60,10 @@ jobs:
             path: C:\Users\rameshkumar\projects\spacegameweb
             
         - name: Deploy to IIS
-        - run: Remove-Item ./** -Recurse
+          run: Remove-Item ./** -Recurse
           working-directory: ${{env.IIS_SITE_PATH}}
-          name: Clear IIS path
-      
-        - run: Copy-Item ./** -Destination ${{env.IIS_SITE_PATH}} -Recurse
+        - name: Clear IIS path
+          run: Copy-Item ./** -Destination ${{env.IIS_SITE_PATH}} -Recurse
         - name: Copy to IIS path
           run: |
            Import-Module WebAdministration
