@@ -8,7 +8,7 @@ on:
 env:
   SLN_FILE: tailspin.sln
   IIS_SITE_PATH: C:\tailspin
-  IIS_WEBSITE: 
+  IIS_WEBSITE: tailspin 
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 jobs:
     build_web_app:
@@ -48,7 +48,7 @@ jobs:
           path: ./Tailspin.SpaceGame.Web/bin/Release/netcoreapp3.1/publish/
     deploy:
       name: 🚀 Deploy
-      runs-on: test-runner
+      runs-on: windows-runner
       environment: deploy
       needs: build_web_app
 
