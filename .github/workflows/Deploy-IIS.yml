@@ -57,7 +57,7 @@ jobs:
           uses: actions/download-artifact@v3
           with:
             name: spacegameweb        
-            path: C:\Users\rameshkumar\projects\spacegameweb
+            path: ${{github.workspace}}
             
         - name: Deploy to IIS
           run: Remove-Item ./** -Recurse
