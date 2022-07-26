@@ -30,7 +30,7 @@ jobs:
       uses: actions/upload-artifact@v3.1.0
       with:
         # Artifact name
-        name: scan-report
+        name: Gitleaks-report
         path: output.csv
     - name: Read CSV
       id: csv
