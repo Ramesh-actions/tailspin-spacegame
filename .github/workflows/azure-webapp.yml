@@ -45,7 +45,7 @@ jobs:
 
     deploy:
       name: 🚀 Deploy
-      runs-on: test-runner
+      runs-on: orgrunner
       environment: deploy
       needs: build_web_app
 
