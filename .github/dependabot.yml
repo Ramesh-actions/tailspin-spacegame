@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      assignes: ramesh2051
+      
+  - package-ecosystem: "nuget"
+    directory: "/Tailspin.SpaceGame.LeaderboardContainer/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "nuget"
+    directory: "/Tailspin.SpaceGame.Web/"
+    schedule:
+      interval: "daily"
