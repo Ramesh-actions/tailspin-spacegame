@@ -2,8 +2,8 @@ name: Build and deploy Azure Web App
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
+#   pull_request:
+#     branches: [main]
   workflow_dispatch:
   
 jobs:
@@ -45,7 +45,7 @@ jobs:
 
     deploy:
       name: 🚀 Deploy
-      runs-on: orgrunner
+      runs-on: self-hosted
       environment: deploy
       needs: build_web_app
 
