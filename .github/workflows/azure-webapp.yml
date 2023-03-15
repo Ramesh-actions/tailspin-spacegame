@@ -45,7 +45,7 @@ jobs:
 
     deploy:
       name: 🚀 Deploy
-      runs-on: ubuntu-latest
+      runs-on: orgrunner
       environment: deploy
       needs: build_web_app
 
