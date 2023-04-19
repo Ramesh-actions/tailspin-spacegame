@@ -45,7 +45,7 @@ jobs:
 
     deploy:
       name: 🚀 Deploy
-      runs-on: self-hosted
+      runs-on: ubuntu-latest
       environment: deploy
       needs: build_web_app
 
