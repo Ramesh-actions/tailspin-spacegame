@@ -46,8 +46,6 @@ jobs:
     deploy:
       name: 🚀 Deploy
       runs-on: ubuntu-latest
-      environment: deploy
-      needs: build_web_app
 
       steps:
         - name: Download artifact from build job
